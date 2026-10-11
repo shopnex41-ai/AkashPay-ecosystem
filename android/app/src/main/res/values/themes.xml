@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SohojpayBD" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:statusBarColor">#07111F</item>
+        <item name="android:navigationBarColor">#07111F</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+        <item name="colorPrimary">#22D3EE</item>
+        <item name="colorAccent">#22D3EE</item>
+    </style>
+
+    <style name="Theme.SohojpayBD" parent="Base.Theme.SohojpayBD" />
+</resources>

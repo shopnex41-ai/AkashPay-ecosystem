@@ -1,0 +1,10 @@
+local.properties
+.gradle/
+**/build/
+*.jks
+*.keystore
+*.pem
+*.p12
+.env
+.env.*
+wrangler.deploy.toml

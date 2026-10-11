@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/premium_screen">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:gravity="center_horizontal">
+            <ImageView android:id="@+id/appLogo" android:layout_width="112dp" android:layout_height="112dp" android:layout_marginTop="28dp" android:src="@drawable/akashpay_logo" android:contentDescription="AkashPay logo" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="AkashPay" android:textColor="#FFFFFF" android:textSize="32sp" android:textStyle="bold" android:fontFamily="sans-serif" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Secure merchant connectivity" android:textColor="#9FB8CF" android:textSize="14sp" android:fontFamily="sans-serif" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:padding="20dp" android:orientation="vertical" android:background="@drawable/premium_card">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connect your device" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold" android:fontFamily="sans-serif" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="AkashPay will securely create your Client ID and API key, then connect this device to the Cloudflare payment system." android:textColor="#B7C9D9" android:textSize="14sp" android:lineSpacingExtra="3dp" android:fontFamily="sans-serif" />
+                <TextView android:id="@+id/userEmail" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="18dp" android:gravity="center_vertical" android:paddingStart="16dp" android:paddingEnd="16dp" android:text="Client ID will be generated automatically" android:textColor="#D8E8F6" android:textSize="13sp" android:background="@drawable/premium_outline_button" android:fontFamily="sans-serif" />
+                <TextView android:id="@+id/device_key" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:paddingStart="16dp" android:paddingEnd="16dp" android:text="API key will be provisioned securely" android:textColor="#D8E8F6" android:textSize="13sp" android:background="@drawable/premium_outline_button" android:fontFamily="sans-serif" />
+                <CheckBox android:id="@+id/rememberMeCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:checked="true" android:text="Keep this device connected" android:textColor="#B7C9D9" android:buttonTint="#22D3EE" android:fontFamily="sans-serif" />
+                <Button android:id="@+id/loginButton" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp" android:background="@drawable/premium_button" android:text="Connect AkashPay Device" android:textAllCaps="false" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" android:fontFamily="sans-serif" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:gravity="center" android:text="Encrypted connection • bKash &amp; Nagad payment monitoring" android:textColor="#6F8EA7" android:textSize="12sp" android:fontFamily="sans-serif" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/lottie" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone" android:background="#D9071526" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_speed="1.2" app:lottie_rawRes="@raw/validate1" />
+</FrameLayout>

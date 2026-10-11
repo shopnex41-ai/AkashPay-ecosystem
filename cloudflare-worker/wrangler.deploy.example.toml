@@ -1,0 +1,21 @@
+name = "akashpay-bot"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+[vars]
+PUBLIC_BASE_URL = "https://akashpay-bot.axura.workers.dev"
+ADMIN_CHAT_ID = "set-in-private-deployment-config"
+PUBLIC_APK_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663762835565/TARgxvOiRRIiyRmz.apk"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "akashpay-db"
+database_id = "9460e530-4e29-4530-ad2e-fae7bd87a366"
+
+[triggers]
+crons = ["*/1 * * * *"]
+
+# Set with wrangler secret put:
+# TELEGRAM_BOT_TOKEN
+# TELEGRAM_WEBHOOK_SECRET
+# ADMIN_TOKEN
